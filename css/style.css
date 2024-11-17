@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    min-height: 1500px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+/* header nav {
+    z-index: 30;
+} */
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+        color: #51d740;
+}
+
+header nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 120px;
+    background-color: #333;
+    padding: 20px 5px;
+    z-index: 1;
+}
+
+header nav ul .dropdown-content a {
+    color: white;
+    padding: 50px 0;
+}
+
+header nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    height: 26px;
+    gap: 5px;
+}
+
+header .hamburger-menu span {
+    display: block;
+    background-color: #333;
+    width: 26px;
+    height: 2px;
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .background-home {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 80vh;
+    z-index: -10;
+}
+
+.home .background-home img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.home .info-home {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10px 15px;
+}
+
+.home .info-home h1 {
+    text-shadow: 0 10px 6px rgba(0, 0, 0, 0.3); 
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+} 
+
+.home .info-home p {
+    font-weight: 300;
+}
+
+/* PROGRAM */
+.program {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.program .info-program {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.program .info-program h2 {
+    font-size: 3rem;
+    font-family: 'oswald', sans-serif;
+}
+
+.program .info-program p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.program .container-program {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+.program .container-program .item-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    gap: 20px;
+    width: 300px;
+    transition: 0.8s;
+}
+
+.program .container-program .item-program i {
+    font-size: 4rem;
+}
+
+.program .container-program .item-program h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.program .container-program .item-program p {
+    font-weight: 300;
+    display: none;
+}
+
+.program .container-program .item-program:hover {
+    background-color: #173e12;
+    color: white;
+}
+
+.program .container-program .item-program:hover p {
+    display: block;
+}
+
+/* visi misi */
+.vm {
+    display:flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 100px auto;
+    width: 100%;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.vm .foto-vm {
+    width: 1200px;
+    height: 500px;
+}
+
+.vm .foto-vm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.vm .vm-side .judul-vm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.vm .vm-side .judul-vm i {
+    font-size: 2rem;
+}
+
+.berita {
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background-berita.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.berita .judul-berita {
+    text-align: center;
+    padding: 50px;
+}
+
+.berita .judul-berita h2 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 0 5px 3px rgba(0, 0, 0, 0.8);
+}
+
+.berita .judul-berita p {
+    font-weight: 300;
+}
+
+.berita .container-berita {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.berita .container-berita .item-berita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    border: 1px solid #51d740;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    gap: 20px;
+}
+
+.berita .container-berita .item-berita img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.berita .container-berita .item-berita a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.berita .container-berita .item-berita p {
+    font-size: 0.7rem;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #333;
+    padding: 30px 20px;
+    text-align: justify;
+    border-radius: 20px 20px 0 0;
+    color: white;
+}
+
+.bottom p {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
