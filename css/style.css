@@ -240,7 +240,7 @@ header .hamburger-menu span {
 .berita {
     width: 100%;
     height: 100%;
-    background-image: url('/img/background-berita.jpg');
+    background-image: url('img/background-berita.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
